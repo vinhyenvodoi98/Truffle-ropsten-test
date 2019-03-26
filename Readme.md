@@ -40,7 +40,9 @@ Ví duj thay tên contract vào giá trị const, require, deploy
 **Run command**
 
 chay compile trước bằng lệnh
+    
     truffle compile 
 
 sau đó deploy bằng lệnh
+    
     truffle deploy
