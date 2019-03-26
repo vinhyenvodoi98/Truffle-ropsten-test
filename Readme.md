@@ -1,4 +1,4 @@
-#This project setup enviroment to deploy smartcontract to Ropsten
+##This project setup enviroment to deploy smartcontract to Ropsten
 
 **Install**
 Xoa file package-lock.js
@@ -36,3 +36,11 @@ Thay đổi compiler version trong truffle.js
         };
 
 Ví duj thay tên contract vào giá trị const, require, deploy
+
+**Run command**
+
+chay compile trước bằng lệnh
+    truffle compile 
+
+sau đó deploy bằng lệnh
+    truffle deploy
