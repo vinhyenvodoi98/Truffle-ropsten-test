@@ -1,5 +1,13 @@
 require('dotenv').config();
-const HDWalletPriver = require('truffle-hdwallet-provider');
+const HDWalletProvider = require('truffle-hdwallet-provider');
+var mnemonic = "apple banana coffie apple banana coffie apple banana coffie"
+// var provider = new HDWalletProvider (mnemonic,"https://ropsten.infura.io/v3/c9a0f45995234454849d7a2d3c9124ed")
+
+// TODO HD Wallet
+// ==================
+// Mnemonic:      apple banana coffie
+// Base HD Path:  m/44'/60'/0'/0/{account_index}
+
 
 module.exports = {
 
@@ -7,8 +15,8 @@ module.exports = {
         ropsten: {
             provider: function(){
                 return new HDWalletProvider(
-                    process.env.MNEMONIC,
-                    `https://ropsten.infura.io/${process.env.INFURA_API_KEY}`
+                    mnemonic,
+                    `https://ropsten.infura.io/v3/c9a0f45995234454849d7a2d3c9124ed`
                 )
             },
             gasPrice: 25000000000,
