@@ -1,3 +1,5 @@
+// use this file to deploy smartcontract to ropsten 
+
 pragma solidity 0.4.24;
 
 contract SimpleStorage {
