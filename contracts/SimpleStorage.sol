@@ -2,14 +2,14 @@
 
 pragma solidity 0.4.24;
 
-contract SimpleStorage {
-    string value;
+contract SimpleStorage {    
+    uint value;
 
-    function set(string x) public {
+    function set(uint x) public {
         value = x;
     }
 
-    function get() public view returns (string) {
+    function get() public view returns (uint) {
         return value;
     }
 }
